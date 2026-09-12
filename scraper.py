@@ -130,12 +130,11 @@ def run_your_scraper(cat_id, file_name, group_name):
     print(f"🎉 Done! Pure M3U Playlist generated without shortlinks for {group_name}.")
 
 def main():
-    # প্রথমে ক্যাটাগরি ৮৫২ স্ক্যান করবে
-    run_your_scraper(cat_id="4", file_name="HindiMovies.m3u", group_name="Hindi Movies")
-    
-    # এরপর ক্যাটাগরি ১ স্ক্যান করবে
+   
+    run_your_scraper(cat_id="4", file_name="Hindi-Movies.m3u", group_name="Hindi Movies")
     run_your_scraper(cat_id="5", file_name="Hindi-DubbedMovies.m3u", group_name="Hindi-Dubbed Movies")
-    run_your_scraper(cat_id="13", file_name="MarathiMovies.m3u", group_name="Marathi Movies")
+    run_your_scraper(cat_id="13", file_name="Marathi-Movies.m3u", group_name="Marathi Movies")
+    run_your_scraper(cat_id="7", file_name="Cartoon-Movies.m3u", group_name="Cartoon Movies")
 
 if __name__ == "__main__":
     main()
