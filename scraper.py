@@ -131,10 +131,11 @@ def run_your_scraper(cat_id, file_name, group_name):
 
 def main():
     # প্রথমে ক্যাটাগরি ৮৫২ স্ক্যান করবে
-    run_your_scraper(cat_id="852", file_name="playlist.m3u", group_name="Bengali Dubbed")
+    run_your_scraper(cat_id="4", file_name="HindiMovies.m3u", group_name="Hindi Movies")
     
     # এরপর ক্যাটাগরি ১ স্ক্যান করবে
-    run_your_scraper(cat_id="1", file_name="bangla.m3u", group_name="Bangla Movie")
+    run_your_scraper(cat_id="5", file_name="Hindi-DubbedMovies.m3u", group_name="Hindi-Dubbed Movies")
+    run_your_scraper(cat_id="13", file_name="MarathiMovies.m3u", group_name="Marathi Movies")
 
 if __name__ == "__main__":
     main()
