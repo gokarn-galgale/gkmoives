@@ -43,7 +43,7 @@ def process_movie(base_name, watch_link, quality, scraper, group_name):
         file_name = re.sub(r'\.mkv|\.mp4', '', file_name, flags=re.IGNORECASE)
         file_name = file_name.replace('.', ' ').strip()
         
-        m3u_entry = f'#EXTINF:-1 tvg-logo="{poster}" group-title="{group_name}", {file_name}\n{actual_link}\n'
+        m3u_entry = f'#EXTINF:-1 tvg-logo="{poster}" group-title="{group_name}", {file_name}\n{actual_link}|Referer={BASE_URL}/\n'
         return m3u_entry
         
     except Exception as e:
